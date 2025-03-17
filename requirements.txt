@@ -13,72 +13,12 @@ nltk
 streamlit
 pytest
 python-dotenv
-# torch
 python-louvain
 pycountry
 geopy
 textblob
 
-# tensorflow
-# tensorflow-hub
-
-# transformers==4.30.2
-# sentencepiece==0.1.99
-# torch>=2.0.0
-# accelerate>=0.20.3
 google-cloud-aiplatform 
 google-generativeai
 wikipedia-api>=0.5.4
 python-dateutil>=2.8.2
-
-# st.subheader("Geographical Distribution of Mentions")
-#         fig = px.scatter_mapbox(
-#             geo_data,
-#             lat='lat',
-#             lon='lon',
-#             size='count',
-#             hover_name='location',
-#             color='count',
-#             title='Geographic Distribution of Content',
-#             mapbox_style='carto-positron',
-#             zoom=1
-#         )
-#         st.plotly_chart(fig, use_container_width=True)
-
-
-
-# with tab3:
-#         st.subheader("Network Analysis")
-#         network_analyzer = NetworkAnalyzer()
-        
-#         with st.spinner('Analyzing network structure...'):
-#             metrics, G = network_analyzer.build_interaction_network(filtered_df)
-#             geo_data = network_analyzer.analyze_geographical_distribution(filtered_df)
-#             influential_nodes = network_analyzer.get_influential_nodes()
-#             anomalies = network_analyzer.detect_anomalies()
-        
-#         # Display network metrics
-#         col1, col2 = st.columns(2)
-        
-#         with col1:
-#             st.write("Basic Network Metrics:", metrics['basic_metrics'])
-#             st.write("Community Modularity:", metrics['community_metrics']['modularity'])
-        
-#         with col2:
-#             st.write("Top Influential Nodes:", influential_nodes)
-#             st.write("Network Anomalies:", anomalies)
-        
-#         # Plot geographical distribution
-#         st.subheader("Geographical Distribution of Mentions")
-#         fig = px.scatter_mapbox(
-#             geo_data,
-#             lat='lat',
-#             lon='lon',
-#             size='count',
-#             hover_name='location',
-#             color='count',
-#             title='Geographic Distribution of Content',
-#             mapbox_style='carto-positron',
-#             zoom=1
-#         )
-#         st.plotly_chart(fig, use_container_width=True)
